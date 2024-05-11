@@ -159,6 +159,7 @@ func (d *BaiduNetdisk) linkOfficial(file model.Obj, args model.LinkArgs) (*model
 		URL: u,
 		Header: http.Header{
 			"User-Agent": []string{"pan.baidu.com"},
+			"Referer":    []string{"https://pan.baidu.com/"},
 		},
 	}, nil
 }
